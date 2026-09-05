@@ -6,35 +6,31 @@ API Learn is an educational platform intentionally designed for experimentation 
 
 Some unusual responses, rate limits, authentication flows, scraping traps, or deliberately misleading page elements may be intentional parts of the learning environment.
 
-However, genuine security vulnerabilities should be reported privately.
+## Protect your data
 
-## Reporting a vulnerability
+Please do **not** publish or submit real sensitive information while using API Learn or interacting with this repository.
 
-Please **do not create a public GitHub Issue or Discussion** for a suspected security vulnerability.
+Never share:
 
-A security report may include issues such as:
+* passwords
+* access tokens
+* JWTs
+* cookies
+* session IDs
+* API credentials
+* private keys
+* authentication headers
+* real personal information
 
-* authentication or authorization bypass
-* access to another user's private application state
-* exposure of secrets or credentials
-* unintended access to server or infrastructure resources
-* injection vulnerabilities
-* serious cross-site scripting vulnerabilities
-* CSRF vulnerabilities affecting protected actions
-* unintended data exposure
-* mechanisms that allow the service to be significantly disrupted
+When posting Issues or Discussions, always remove or replace sensitive values before publishing request examples, response data, screenshots, logs, or code.
 
-When reporting a vulnerability, please include:
+Use fake credentials and synthetic data whenever possible.
 
-* a clear description of the issue
-* affected URL or endpoint
-* reproduction steps
-* expected behavior
-* actual behavior
-* proof-of-concept details when necessary
-* possible security impact
+## Security-related findings
 
-Please avoid accessing, modifying, or deleting data beyond what is necessary to demonstrate the problem.
+If you notice behavior that appears security-related, avoid publishing exploit details, credentials, private data, or information that could expose other users.
+
+A general description of the problem is usually enough to start a discussion without revealing sensitive technical details.
 
 ## Educational behavior is not necessarily a vulnerability
 
@@ -48,15 +44,17 @@ API Learn intentionally includes behavior used for teaching, including:
 * intentionally generated error responses
 * fake users, products, carts, and orders
 
-If you are unsure whether something is intentional, you may first ask a general question in GitHub Discussions without publishing exploit details.
+Some unusual behavior may therefore be intentional.
 
-## Public disclosure
+## Responsible use
 
-Please allow reasonable time for a security issue to be investigated and fixed before publicly disclosing technical details.
+API Learn is built for experimentation, but please do not intentionally overload, attack, disrupt, or abuse the service.
+
+Use only the access and data necessary for your learning or testing scenario.
 
 ## Scope
 
-The security policy applies to:
+This policy applies to:
 
 * https://apilearn.tukas.dev/
 * the REST API
@@ -65,4 +63,4 @@ The security policy applies to:
 
 Third-party services and infrastructure providers are outside the project's direct scope.
 
-Thank you for reporting security issues responsibly.
+Thank you for using API Learn responsibly.
