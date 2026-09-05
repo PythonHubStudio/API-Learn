@@ -1,0 +1,97 @@
+name: 🦖 SOAP API Issue
+description: Report a problem with SOAP, WSDL, operations, or SOAP Faults
+title: "[SOAP]: "
+labels: ["soap"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report a reproducible problem with the API Learn SOAP 1.1 service.
+
+        Documentation:
+        https://apilearn.tukas.dev/soap/docs/
+
+        WSDL:
+        https://apilearn.tukas.dev/soap/service?wsdl
+
+        **Remove usernames, passwords, WS-Security credentials, cookies,
+        tokens, and other sensitive values before submitting.**
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked the SOAP documentation.
+          required: true
+        - label: I searched existing issues for the same problem.
+          required: true
+
+  - type: input
+    id: operation
+    attributes:
+      label: SOAP operation
+      placeholder: "Example: GetCategories"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Problem type
+      options:
+        - SOAP request
+        - SOAP response
+        - SOAP Fault
+        - WSDL
+        - XML Schema / validation
+        - WS-Security
+        - SOAPAction
+        - Client generation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: SOAP request
+      description: Provide the smallest XML request that reproduces the issue.
+      render: xml
+
+  - type: textarea
+    id: response
+    attributes:
+      label: SOAP response / Fault
+      render: xml
+
+  - type: input
+    id: status
+    attributes:
+      label: HTTP status code
+      placeholder: "Example: 200, 500"
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: input
+    id: client
+    attributes:
+      label: SOAP client / library
+      placeholder: "Example: zeep, curl, requests, Postman"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
