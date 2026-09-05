@@ -1,0 +1,103 @@
+name: 🔌 REST API Issue
+description: Report unexpected behavior in the REST API
+title: "[REST API]: "
+labels: ["rest-api"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report a reproducible problem with the API Learn REST API.
+
+        Documentation:
+        https://apilearn.tukas.dev/api/docs/
+
+        **Never include passwords, tokens, cookies, or other credentials.**
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked the REST API documentation.
+          required: true
+        - label: I searched existing issues for the same problem.
+          required: true
+
+  - type: dropdown
+    id: method
+    attributes:
+      label: HTTP method
+      options:
+        - GET
+        - POST
+        - PUT
+        - PATCH
+        - DELETE
+        - HEAD
+        - OPTIONS
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: endpoint
+    attributes:
+      label: Endpoint
+      placeholder: /api/products/
+    validations:
+      required: true
+
+  - type: input
+    id: status
+    attributes:
+      label: Response status code
+      placeholder: "Example: 200, 400, 401, 404, 429, 500"
+    validations:
+      required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: Request
+      description: |
+        Provide the smallest request that reproduces the problem.
+        Remove credentials and sensitive data.
+      placeholder: |
+        GET /api/products/?page=2
+
+        or:
+
+        response = requests.get(...)
+      render: python
+
+  - type: textarea
+    id: response
+    attributes:
+      label: Response
+      description: Relevant response body or headers.
+      render: text
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: input
+    id: client
+    attributes:
+      label: Client / library
+      placeholder: "Example: requests 2.x, curl, Postman, browser"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
