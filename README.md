@@ -1,3 +1,11 @@
+[![Live Platform](https://img.shields.io/badge/Live%20Platform-apilearn.tukas.dev-brightgreen)](https://apilearn.tukas.dev/)
+[![REST API](https://img.shields.io/badge/REST%20API-Swagger%20UI-85EA2D?logo=swagger&logoColor=black)](https://apilearn.tukas.dev/api/docs/)
+[![SOAP API](https://img.shields.io/badge/SOAP%20API-Docs-blue)](https://apilearn.tukas.dev/soap/docs/)
+[![WSDL](https://img.shields.io/badge/WSDL-1.1-blueviolet)](https://apilearn.tukas.dev/soap/service?wsdl)
+[![YouTube](https://img.shields.io/badge/YouTube-PythonHubStudio-red?logo=youtube&logoColor=white)](https://www.youtube.com/@PythonHubStudio)
+![Source Code](https://img.shields.io/badge/source%20code-private-lightgrey)
+[![GitHub issues](https://img.shields.io/github/issues/PythonHubStudio/api-learn)](https://github.com/USERNAME/api-learn/issues)
+
 # API Learn
 
 ### A free practice platform for Web Scraping, REST API, SOAP, HTTP & Browser Automation
