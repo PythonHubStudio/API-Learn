@@ -4,7 +4,7 @@
 [![WSDL](https://img.shields.io/badge/WSDL-1.1-blueviolet)](https://apilearn.tukas.dev/soap/service?wsdl)
 [![YouTube](https://img.shields.io/badge/YouTube-PythonHubStudio-red?logo=youtube&logoColor=white)](https://www.youtube.com/@PythonHubStudio)
 ![Source Code](https://img.shields.io/badge/source%20code-private-lightgrey)
-[![GitHub issues](https://img.shields.io/github/issues/PythonHubStudio/api-learn)](https://github.com/USERNAME/api-learn/issues)
+[![GitHub issues](https://img.shields.io/github/issues/PythonHubStudio/api-learn)](https://github.com/PythonHubStudio/api-learn/issues)
 
 # API Learn
 
