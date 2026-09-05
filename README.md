@@ -7,7 +7,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/PythonHubStudio/api-learn)](https://github.com/PythonHubStudio/api-learn/issues)
 
 # API Learn
-
+# Official repository for API Learn https://apilearn.tukas.dev/
 ### A free practice platform for Web Scraping, REST API, SOAP, HTTP & Browser Automation
 
 **API Learn** is a realistic fake e-commerce website built specifically as a safe practice target for developers, students, and educators.
@@ -438,6 +438,8 @@ Please **do not publish passwords, access tokens, cookies, or other credentials*
 # 🔒 Source Code
 
 The source code of API Learn is **private and intentionally not published in this repository**.
+
+Forks or mirrors of this repository are not affiliated with or endorsed by API Learn unless explicitly stated.
 
 This repository exists as the public home for:
 
