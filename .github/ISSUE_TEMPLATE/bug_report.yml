@@ -1,0 +1,92 @@
+name: 🐛 Bug Report
+description: Report a reproducible problem with the API Learn platform
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem with API Learn.
+
+        Please provide enough information to reproduce the issue.
+
+        **Do not include passwords, access tokens, cookies, session IDs, or other credentials.**
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find the same problem.
+          required: true
+        - label: I am reporting a problem with the API Learn platform itself, not asking for help with my own code.
+          required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Page or endpoint where the problem occurs.
+      placeholder: https://apilearn.tukas.dev/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the actual behavior.
+      placeholder: Explain what happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Send ...
+        3. Click ...
+        4. Observe ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Platform area
+      options:
+        - Website / UI
+        - REST API
+        - SOAP API
+        - Web scraping
+        - Authentication
+        - Cart / Orders
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: status
+    attributes:
+      label: HTTP status code
+      description: If applicable.
+      placeholder: "Example: 400, 401, 404, 500"
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional details
+      description: |
+        Add relevant response data, logs, screenshots, browser information,
+        Python/library versions, or other details that may help reproduce the issue.
