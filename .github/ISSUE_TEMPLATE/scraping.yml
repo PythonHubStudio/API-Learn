@@ -1,0 +1,100 @@
+name: 🕷 Scraping / Automation Issue
+description: Report unexpected behavior on pages intended for scraping or browser automation
+title: "[Scraping]: "
+labels: ["scraping"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report unexpected behavior related to scraping or browser automation.
+
+        API Learn intentionally contains scraping traps, dynamic content,
+        rate limits, and bot-detection exercises.
+
+        Please make sure the behavior you found is actually unexpected
+        and not part of the documented exercise.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked whether this behavior is intentionally part of the scraping exercise.
+          required: true
+        - label: I searched existing issues for the same problem.
+          required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      placeholder: https://apilearn.tukas.dev/catalog/...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Page / interaction type
+      options:
+        - SSR HTML
+        - AJAX HTML
+        - AJAX JSON
+        - Infinite Scroll
+        - Authentication / Session
+        - Form interaction
+        - Browser automation
+        - Scraping detection
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Tool
+      options:
+        - requests
+        - Beautiful Soup
+        - lxml / XPath
+        - Selenium
+        - Playwright
+        - Browser DevTools
+        - curl
+        - Other
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Minimal reproduction
+      description: Provide a minimal code example if possible.
+      render: python
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: headers
+    attributes:
+      label: Relevant response headers
+      description: |
+        Include relevant headers such as X-Scraping-* if they are related
+        to the problem. Remove cookies and credentials.
+      render: text
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Browser version, library version, screenshots, logs, etc.
